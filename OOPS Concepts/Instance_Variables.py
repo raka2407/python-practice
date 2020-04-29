@@ -17,3 +17,15 @@ eobject3.third = 30          # eobject3 has 3 properties: named first, second an
 print(eobject1.__dict__)
 print(eobject2.__dict__)
 print(eobject3.__dict__)
+
+# prints the following content
+
+#    {'_ExampleClass__first': 10}
+#    {'_ExampleClass__first': 1, '_ExampleClass__second': 2}
+#    {'_ExampleClass__first': 20, '_ExampleClass__second': 30, 'third': 30}
+
+eobject3.__fourth = 40   # __ can be given to variable names to make them private
+
+#Each of these variables can be directly accessed outside the class using objectname._ClassName__variableName. Please see below
+print(eobject1._ExampleClass__first)
+print(eobject3._ExampleClass__fourth)  # throws and error as this instance variable is defined outside the class code.
