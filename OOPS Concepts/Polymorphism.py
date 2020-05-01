@@ -14,3 +14,6 @@ obj2 = B()
 
 obj1.doanything()
 obj2.doanything()  #Overrides the method in Class 'A'
+
+#Important Notes#
+1. One of the main advantages of polymorphism is to define the abstract method in super class and override its functionality in subclasses that inherite the super class.
